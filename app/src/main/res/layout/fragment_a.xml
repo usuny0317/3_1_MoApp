@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FragmentA"
+    android:background="#2E2E2E">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="달력"
+        android:background="#F3E2A9"
+        android:layout_margin="1dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:textColor="#2E2E2E"
+        android:layout_weight="3"
+        />
+
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="6"
+        android:showWeekNumber="true"
+        />
+
+    <Button
+        android:id="@+id/setcal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="날짜 설정하기"
+        android:backgroundTint="#FACC2E"
+        android:layout_margin="1dp"
+        android:layout_gravity="center"
+        android:textColor="#2E2E2E"
+        android:layout_weight="1"
+        />
+
+</LinearLayout>

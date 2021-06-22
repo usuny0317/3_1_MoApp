@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FragmentC"
+    android:background="#2E2E2E"
+    >
+
+
+    <Button
+        android:id="@+id/logOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="로그아웃"
+        android:backgroundTint="#FACC2E"
+        android:layout_margin="1dp"
+        android:layout_gravity="center"
+        android:textColor="#2E2E2E"
+        />
+    <Button
+        android:id="@+id/pop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="정보보기"
+        android:backgroundTint="#FACC2E"
+        android:layout_margin="1dp"
+        android:layout_gravity="center"
+        android:textColor="#2E2E2E"
+        />
+    <Button
+        android:id="@+id/popout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="정보닫기"
+        android:backgroundTint="#FACC2E"
+        android:layout_margin="1dp"
+        android:layout_gravity="center"
+        android:textColor="#2E2E2E"
+        />
+    <TextView
+        android:id="@+id/infomation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:text="2021-06-17\n20190967 유선영
+        \n 3학년 1학기 모바일앱프로그래밍 \n
+        기말고사과제 \n 감사합니다!"
+        android:layout_margin="1dp"
+        android:gravity="center"
+        android:visibility="invisible"
+        />
+
+
+</LinearLayout>

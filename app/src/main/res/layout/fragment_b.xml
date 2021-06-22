@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentB"
+    android:orientation="vertical"
+    android:background="#2E2E2E">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="horizontal"
+       android:layout_weight="5">
+
+       <ImageView
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_weight="7"
+           android:background="#F7F2E0"
+           android:src="@drawable/pets" />
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:text="반려동물기록"
+           android:layout_weight="3"
+           android:background="#F3E2A9"
+           android:layout_margin="1dp"
+           android:layout_gravity="center"
+           android:gravity="bottom"
+           android:textSize="30dp"
+           android:textColor="#B18904"/>
+
+   </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <EditText
+            android:id="@+id/input1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:hint="작성하는 날짜(0000)"
+           />
+        <Button
+            android:id="@+id/showday"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="날짜를 나타냅니다."
+            android:backgroundTint="#FACC2E"
+            android:layout_gravity="right"
+            />
+
+    </LinearLayout>
+    <EditText
+        android:id="@+id/input2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="5"
+        android:hint="내용"
+        android:inputType="textMultiLine" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="저장하기"
+        android:backgroundTint="#FACC2E"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_weight="3"
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>
